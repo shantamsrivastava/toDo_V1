@@ -1,4 +1,4 @@
-##This is the first iteration of a fullstack ToDo app.
+# This is the first iteration of a full-stack ToDo app
 
 Major current issues,
 - .fetch causes infinite requests
