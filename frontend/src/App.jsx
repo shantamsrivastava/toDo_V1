@@ -10,11 +10,13 @@ function App() {
   const [todo, setTodo] = useState([]);
 
   useEffect(function () {
-    fetch("http://localhost:3000/todos")
+    setInterval(function() {
+      fetch("http://localhost:3000/todos")
     .then(async function(res) {
       const json = await res.json();
       setTodo(json.allTodos);
     });
+    },5000)
   },[])
   
   return (
